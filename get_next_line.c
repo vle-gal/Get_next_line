@@ -6,7 +6,7 @@
 /*   By: vle-gal <vle-gal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/10 17:55:13 by vle-gal           #+#    #+#             */
-/*   Updated: 2017/11/10 17:55:19 by vle-gal          ###   ########.fr       */
+/*   Updated: 2018/02/01 08:53:18 by vle-gal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ static	int		verif(char **buff, char **tab, char **line)
 
 int				get_next_line(int const fd, char **line)
 {
-	static char *buff[BUFF_SIZE + 1];
+	static char *buff[12288];
 	char		*tmp;
 	int			result;
 	int			readed;
